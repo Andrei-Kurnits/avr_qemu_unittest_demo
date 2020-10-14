@@ -1,7 +1,5 @@
 #!/bin/bash
 
-rm success.elf failure.elf loop.elf
-
 export CDEFS=-DSCENARIO=SUCCESS
 make clean 1> /dev/null && make all 1> /dev/null
 mv main.elf success.elf
